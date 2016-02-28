@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2015 Amasty (http://www.amasty.com)
+ * @package Amasty_HelloWorld
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <tab id="skudler" translate="label" sortOrder="50">
+            <label>Skudler</label>
+        </tab>
+
+        <section id="skudler_events" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <tab>skudler</tab>
+            <resource>Skudler_Connect::skudler_connect</resource>
+            <label>Events</label>
+
+            <group id="new_order" translate="skudler_event_new_order" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>New Order</label>
+                <field id="event_new_order_id" translate="event_new_order_id" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Event</label>
+                    <source_model>Skudler\Connect\Model\SkudlerEvent</source_model>
+                </field>
+                <field id="event_new_order_enable" translate="event_new_order_enable" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+            <group id="product_added" translate="skudler_event_product_added" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Product Added To Cart</label>
+                <field id="event_product_added_id" translate="event_product_added_id" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Event</label>
+                    <source_model>Skudler\Connect\Model\SkudlerEvent</source_model>
+                </field>
+                <field id="event_product_added_enable" translate="event_product_added_enable" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+            <group id="login" translate="skudler_event_login" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Login</label>
+                <field id="event_login_id" translate="event_login_id" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Event</label>
+                    <source_model>Skudler\Connect\Model\SkudlerEvent</source_model>
+                </field>
+                <field id="event_login_enable" translate="event_login_enable" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+            <group id="register" translate="skudler_event_register" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Register</label>
+                <field id="event_register_id" translate="event_register_id" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Event</label>
+                    <source_model>Skudler\Connect\Model\SkudlerEvent</source_model>
+                </field>
+                <field id="event_register_enable" translate="event_register_enable" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+        </section>
+
+
+
+
+
+        <section id="skudler_connect" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <tab>skudler</tab>
+            <resource>Skudler_Connect::skudler_connect</resource>
+            <label>API Settings</label>
+            <group id="api" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>API Settings</label>
+                <field id="skudler_site" translate="skudler_site" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Site</label>
+                    <source_model>Skudler\Connect\Model\SkudlerSite</source_model>
+                </field>
+                <field id="token" translate="skudler_token" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Token</label>
+                </field>
+                <field id="key" translate="skudler_key" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>API Key</label>
+                </field>
+                <field id="enable" translate="skudler_enable" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enable Skudler</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <comment><![CDATA[
+                <img src="http://magento2.dev/pub/static/adminhtml/Magento/backend/en_US/images/magento-icon.svg"/>
+                Accept credit/debit cards and PayPal in your Magento store. No setup or monthly fees and your customers never leave your store to complete the purchase.
+                ]]></comment>
+            </group>
+        </section>
+
+    </system>
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+    <event name="customer_register_success">
+        <observer name="skuler_customer_register" instance="Skudler\Connect\Observer\CustomerRegister" />
+    </event>
+    <event name="customer_login">
+        <observer name="skuler_customer_login" instance="Skudler\Connect\Observer\CustomerLogin" />
+    </event>
+    <event name="checkout_cart_add_product_complete">
+        <observer name="skuler_product_cart" instance="Skudler\Connect\Observer\ProductToCart" />
+    </event>
+    <event name="sales_order_place_after">
+        <observer name="skuler_new_order" instance="Skudler\Connect\Observer\NewOrder" />
+    </event>
+</config>

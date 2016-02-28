@@ -1,0 +1,16 @@
+{
+    "name": "skudler/connect",
+    "description": "Connect your magento store to the Skudler event driven marketing platform",
+    "require": {
+        "skudler/skudler-api": "^0.2.1"
+    },
+    "authors": [
+        {
+            "name": "julien",
+            "email": "julien.fournier@inopale.fr"
+        }
+    ],
+    "config": {
+        "vendor-dir": "lib"
+    }
+}

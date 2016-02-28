@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "84a47e012fd49bc256669349cd19b52f",
+    "content-hash": "96e183b8c2111f4fd768e7803108a24c",
+    "packages": [
+        {
+            "name": "skudler/skudler-api",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/havenS/skudler-api.git",
+                "reference": "b4e9d389a9150aee36926f981d195e1e84d1c2f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/havenS/skudler-api/zipball/b4e9d389a9150aee36926f981d195e1e84d1c2f1",
+                "reference": "b4e9d389a9150aee36926f981d195e1e84d1c2f1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skudler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julien Fournier",
+                    "email": "fournier.j@sfr.fr",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Library to connect to the Skudler API",
+            "homepage": "https://github.com/havenS/skudler-api",
+            "keywords": [
+                "email",
+                "marketing"
+            ],
+            "time": "2015-09-12 13:55:29"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
